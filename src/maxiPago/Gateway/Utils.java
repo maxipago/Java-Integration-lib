@@ -45,11 +45,13 @@ class Utils {
 		String responseContent = Post(xml, url); //Salvar XML de retorno
 		
 		SaveRequest.log(xml, responseContent, url);
-		
-		System.out.println("Post: " + url);
-		System.out.println("\nRequisicao: " + xml);
-		System.out.println("\nResponse: " + responseContent);		
-		
+
+		if(environment.toLowerCase().equals("test")){
+			System.out.println("Post: " + url);
+			System.out.println("\nRequisicao: " + xml);
+			System.out.println("\nResponse: " + responseContent);
+		}
+
 		return ParseResponse(responseContent);
 	}
     
