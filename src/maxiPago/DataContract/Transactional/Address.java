@@ -3,7 +3,7 @@ package maxiPago.DataContract.Transactional;
 public class Address {
 	
 	//Attributes
-	private int id;
+	private Integer id;
 	private String name;
 	private String address;
 	private String address2;
@@ -42,14 +42,14 @@ public class Address {
 		return type;
 	}
 	
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-	
-	public int getId() {
+
+	public Integer getId() {
 		return id;
 	}
-	
+
 	public String getName() {
 		return this.name;
 	}
